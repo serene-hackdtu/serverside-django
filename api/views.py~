@@ -6,7 +6,7 @@ import json
 def getSymptoms(request):
 	try:
 		response=request.GET.get("symptom1")
-		print mainf(response)
+		mainf(response)
 	except Exception as e:
 		return HttpResponse("There was an error")
 
